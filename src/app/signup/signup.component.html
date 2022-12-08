@@ -1,0 +1,55 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Aadhar Number</label>
+                    <input name="aadharNo" [(ngModel)]="aadharNo" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label" style="color:white">Address</label>
+                    <textarea name=" address" [(ngModel)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">PIN Code</label>
+                    <input name="pincode" [(ngModel)]="pincode" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Date Of Birth</label>
+                    <input type="date" name="dateOfBirth" [(ngModel)]="dateOfBirth" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Email</label>
+                  <input type="email" name="email" [(ngModel)]="email" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Phone Number</label>
+                    <input name="phonenumber" [(ngModel)]="phonenumber" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white">Password</label>
+                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label" style="color:white"> Confirm Password</label>
+                    <input type="password" name=" confirmpassword" [(ngModel)]=" confirmpassword" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button (click)="readValues()" class="btn btn-warning">Register</button>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <a routerLink="/" style="color:white">Back to userlogin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
