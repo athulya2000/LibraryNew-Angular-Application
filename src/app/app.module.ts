@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { BooksEntryComponent } from './books-entry/books-entry.component';
 import { ViewallBooksComponent } from './viewall-books/viewall-books.component';
+import { SearchBooksComponent } from './search-books/search-books.component';
 
 
 const myRoute:Routes=[
@@ -33,6 +34,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewallBooksComponent
+  },
+  {
+    path:"search",
+    component:SearchBooksComponent
   }
 ]
 
@@ -45,6 +50,7 @@ const myRoute:Routes=[
     UserLoginComponent,
     BooksEntryComponent,
     ViewallBooksComponent,
+    SearchBooksComponent,
    
   ],
   imports: [
