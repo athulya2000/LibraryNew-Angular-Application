@@ -8,11 +8,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 import { SignupComponent } from './signup/signup.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdministrationLoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
+  },
+  {
+    path:"login",
+    component:UserLoginComponent
   }
 ]
 
@@ -21,7 +30,8 @@ const myRoute:Routes=[
     AppComponent,
     AdministrationLoginComponent,
     NavBar1Component,
-    SignupComponent
+    SignupComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
