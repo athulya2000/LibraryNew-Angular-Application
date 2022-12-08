@@ -7,6 +7,7 @@ import { AdministrationLoginComponent } from './administration-login/administrat
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NavBar1Component } from './nav-bar1/nav-bar1.component';
+import { SignupComponent } from './signup/signup.component';
 
 const myRoute:Routes=[
   {
@@ -19,7 +20,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdministrationLoginComponent,
-    NavBar1Component
+    NavBar1Component,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
