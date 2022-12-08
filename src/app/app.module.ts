@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { BooksEntryComponent } from './books-entry/books-entry.component';
 
 const myRoute:Routes=[
   {
@@ -22,6 +23,10 @@ const myRoute:Routes=[
   {
     path:"login",
     component:UserLoginComponent
+  },
+  {
+    path:"entry",
+    component:BooksEntryComponent
   }
 ]
 
@@ -31,7 +36,8 @@ const myRoute:Routes=[
     AdministrationLoginComponent,
     NavBar1Component,
     SignupComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    BooksEntryComponent
   ],
   imports: [
     BrowserModule,
