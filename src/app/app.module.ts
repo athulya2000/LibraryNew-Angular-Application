@@ -12,7 +12,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { BooksEntryComponent } from './books-entry/books-entry.component';
 import { ViewallBooksComponent } from './viewall-books/viewall-books.component';
 import { SearchBooksComponent } from './search-books/search-books.component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 const myRoute:Routes=[
   {
@@ -57,7 +57,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
