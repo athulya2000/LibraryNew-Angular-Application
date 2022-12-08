@@ -10,6 +10,8 @@ import { NavBar1Component } from './nav-bar1/nav-bar1.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { BooksEntryComponent } from './books-entry/books-entry.component';
+import { ViewallBooksComponent } from './viewall-books/viewall-books.component';
+
 
 const myRoute:Routes=[
   {
@@ -27,6 +29,10 @@ const myRoute:Routes=[
   {
     path:"entry",
     component:BooksEntryComponent
+  },
+  {
+    path:"view",
+    component:ViewallBooksComponent
   }
 ]
 
@@ -37,7 +43,9 @@ const myRoute:Routes=[
     NavBar1Component,
     SignupComponent,
     UserLoginComponent,
-    BooksEntryComponent
+    BooksEntryComponent,
+    ViewallBooksComponent,
+   
   ],
   imports: [
     BrowserModule,
