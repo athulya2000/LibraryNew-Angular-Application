@@ -23,14 +23,15 @@ export class BooksEntryComponent {
     this.api.booksEntry(books).subscribe(
       (response:any)=>{
         console.log(response)
-        if (response.status=="success") {
+        if (response.Status=="success") {
           alert("Book added successfully")
           this.title=""
           this.author=""
           this.image=""
           this.price=""
-        } else {
-          alert("something went wrong")
+        } 
+        else {
+          
         }
       }
     )

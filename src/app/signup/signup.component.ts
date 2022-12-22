@@ -16,12 +16,12 @@ export class SignupComponent {
   phonenumber=""
   username=""
   password=""
-  confirmpassword=""
+  
   constructor(private api:ApiService){}
  
   readValues=()=>
   {
-   let data:any={"name":this.name,"aadharNo":this.aadharNo,"address":this.address,"pincode":this.pincode,"dateOfBirth":this.dateOfBirth,"email":this.email,"phonenumber":this.phonenumber,"username":this.username,"password":this.password," confirmpassword":this.confirmpassword}
+   let data:any={"name":this.name,"aadharNo":this.aadharNo,"address":this.address,"pincode":this.pincode,"dateOfBirth":this.dateOfBirth,"email":this.email,"phonenumber":this.phonenumber,"username":this.username,"password":this.password,}
    console.log(data)
    this.api.addSignup(data).subscribe(
     (response:any)=>{
@@ -37,7 +37,7 @@ export class SignupComponent {
         this.phonenumber=""
         this.username=""
         this.password=""
-        this.confirmpassword=""
+        
       } else {
         alert("Not registered")
       }

@@ -29,7 +29,7 @@ export class UserLoginComponent {
           this.password=""
         } else {
           this.Search=response
-          this.route.navigate(['/entry'])
+          this.route.navigate(['/view'])
         }
       }
     )
